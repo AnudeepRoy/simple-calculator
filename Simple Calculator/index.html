@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<script type="text/javascript" src="Script.js"></script>
+</head>
+<body onload="getClear()">
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2 col-sm-2 col-xs-2"></div>
+
+		<div class="col-md-8 col-sm-8 col-xs-8">
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2"></div>
+				<div class="col-md-8 col-sm-8 col-xs-8">
+
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+					<input type="text" id='ip' name="random" disabled>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button type="button" class="btn btn-warning btn-block" onclick="getClear()">CE</button>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4"></div>
+			</div>
+			<br/>
+					<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(1)" type="button">1</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(2)" type="button">2</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(3)" type="button">3</button>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-danger btn-block" onclick="getFilled('+')" type="button"><strong>+</strong></button>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4"></div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(4)" type="button">4</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(5)" type="button">5</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(6)" type="button">6</button>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-danger btn-block" onclick="getFilled('-')" type="button"><strong>-</strong></button>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4"></div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(7)" type="button">7</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(8)" type="button">8</button>
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" onclick="getFilled(9)" type="button">9</button>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-danger btn-block" onclick="getFilled('*')" type="button"><strong>*</strong></button>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4"></div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" type="button" onclick="getFilled(0)">0</button>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+					<button class="btn btn-info btn-block" type="button" onclick="getFilled('.')"><strong>.</strong></button>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<button class="btn btn-danger btn-block" type="button" onclick="getFilled('/')"><strong>/</strong></button>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<button class="btn btn-block btn-success" type="button" onclick="calci()"><strong>=</strong></button>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4"></div>
+				</div>
+
+				</div>
+
+				<div class="col-md-2 col-sm-2 col-xs-2"></div>
+			</div>
+
+			
+
+		</div><!--End of mid section -->
+
+		<div class="col-md-2 col-sm-2 col-xs-2"></div>
+</div>
+</div>
+
+
+</body>
+</html>
