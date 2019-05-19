@@ -46,7 +46,9 @@ var a = new Array();
 			var res;
 		
 			if(secNum==0){
-				document.getElementById('ip').value = firstNum;
+				var num_parts = firstNum.toString().split(".");
+   				num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    				document.getElementById('ip').value =  num_parts.join(".");
 			}
 			else{
 			switch (optr) {
