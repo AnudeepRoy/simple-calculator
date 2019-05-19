@@ -44,12 +44,13 @@ var a = new Array();
 
 			secNum = Number(y.join(''));
 			var res;
-		
+
 			if(secNum==0){
 				var num_parts = firstNum.toString().split(".");
    				num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    				document.getElementById('ip').value =  num_parts.join(".");
+    			document.getElementById('ip').value =  num_parts.join(".");
 			}
+
 			else{
 			switch (optr) {
 
@@ -84,5 +85,5 @@ var a = new Array();
 		disp=(num)=>{
 			var num_parts = num.toString().split(".");
    			num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    			document.getElementById('ip').value =  num_parts.join(".");
+    		document.getElementById('ip').value =  num_parts.join(".");
 		}
