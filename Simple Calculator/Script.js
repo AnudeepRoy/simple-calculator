@@ -43,12 +43,12 @@ var a = new Array();
 			}
 
 			secNum = Number(y.join(''));
-			
+			var res;
+		
 			if(secNum==0){
 				document.getElementById('ip').value = firstNum;
 			}
-			
-			var res;
+			else{
 			switch (optr) {
 
 					case '+':
@@ -74,6 +74,7 @@ var a = new Array();
 					default:
 					document.getElementById('ip').value = 'Invalid Input';
 					break;
+				}
 			}
 
 		}
