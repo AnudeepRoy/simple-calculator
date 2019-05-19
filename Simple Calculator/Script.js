@@ -43,6 +43,11 @@ var a = new Array();
 			}
 
 			secNum = Number(y.join(''));
+			
+			if(secNum==0){
+				document.getElementById('ip').value = firstNum;
+			}
+			
 			var res;
 			switch (optr) {
 
@@ -74,5 +79,7 @@ var a = new Array();
 		}
 		
 		disp=(num)=>{
-			document.getElementById('ip').value = num;
+			var num_parts = num.toString().split(".");
+   			num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    			document.getElementById('ip').value =  num_parts.join(".");
 		}
