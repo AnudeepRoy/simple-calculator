@@ -1,4 +1,3 @@
-
 var a = new Array();
 
 	getClear = () =>{
@@ -43,9 +42,8 @@ var a = new Array();
 			}
 
 			secNum = Number(y.join(''));
-			var res;
 
-			if(secNum==0){
+			if(secNum==0 && optr!='/'){
 				var num_parts = firstNum.toString().split(".");
    				num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     			document.getElementById('ip').value =  num_parts.join(".");
@@ -55,23 +53,19 @@ var a = new Array();
 			switch (optr) {
 
 					case '+':
-					res = firstNum+secNum;
-					disp(res);
+					disp(firstNum+secNum);
 					break;
 
 					case '-':
-					res = firstNum-secNum;
-					disp(res);
+					disp(firstNum-secNum);
 					break;
 
 					case '*':
-					res = firstNum*secNum;
-					disp(res);
+					disp(firstNum*secNum);
 					break;
 
 					case '/':
-					res = firstNum/secNum;
-					disp(res);
+					disp(firstNum/secNum);
 					break;
 
 					default:
@@ -86,4 +80,4 @@ var a = new Array();
 			var num_parts = num.toString().split(".");
    			num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     		document.getElementById('ip').value =  num_parts.join(".");
-		}
+}
