@@ -28,6 +28,6 @@ var a = new Array();
 			a.length = 0;
 			var num_parts = num.toString().split(".");
    			num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    		document.getElementById('ip').value =  num_parts.join(".");
-    		a[0]= num_parts.join(".");
+			document.getElementById('ip').value =  num_parts.join(".");
+			a[0]= num_parts.join(".");
 }
