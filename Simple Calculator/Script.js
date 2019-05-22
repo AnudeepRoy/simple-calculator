@@ -7,7 +7,7 @@ var a = new Array();
 
 
 	getFilled=(num)=>{
-		if((a.length==0) && (isNaN(num)) && (num!='.')){
+		if((a.length==0) && (isNaN(num)) && (num!='.') && (num!='-'){
 			document.getElementById('ip').value='';
 		}
 
