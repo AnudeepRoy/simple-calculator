@@ -18,66 +18,16 @@ var a = new Array();
 		}
 	}
 
-	calci=()=>{
+	calci= () =>{
 
-			var expr = document.getElementById('ip').value;
-			var str = String(expr);
-			var a = str.split('');
-			var i=0;;
-			var x = new Array();
-			var y = new Array();
-			var firstNum, secNum;
+		disp(eval(String(a.join(''))));
 
-			while(!isNaN(a[i]) || a[i] =='.' ) {
-				x.push(a[i]);
-				i++;
-			}
-
-			firstNum = Number(x.join(''));
-			var optr = a[i];
-			i++;
-
-			for(;i<a.length;i++){
-				y.push(a[i]);
-			}
-
-			secNum = Number(y.join(''));
-
-			if(secNum==0 && optr!='/'){
-				var num_parts = firstNum.toString().split(".");
-   				num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    			document.getElementById('ip').value =  num_parts.join(".");
-			}
-
-			else{
-			switch (optr) {
-
-					case '+':
-					disp(firstNum+secNum);
-					break;
-
-					case '-':
-					disp(firstNum-secNum);
-					break;
-
-					case '*':
-					disp(firstNum*secNum);
-					break;
-
-					case '/':
-					disp(firstNum/secNum);
-					break;
-
-					default:
-					document.getElementById('ip').value = 'Invalid Input';
-					break;
-				}
-			}
-
-		}
+	}
 		
 		disp=(num)=>{
+			a.length = 0;
 			var num_parts = num.toString().split(".");
    			num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     		document.getElementById('ip').value =  num_parts.join(".");
+    		a[0]= num_parts.join(".");
 }
