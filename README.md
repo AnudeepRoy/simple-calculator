@@ -1,2 +1,2 @@
 # simple-calculator
-A simple calculator made with pure JavaScript.
+A simple calculator built with pure JavaScript and used Bootstrap for the buttons layout.
